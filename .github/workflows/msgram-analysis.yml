@@ -20,3 +20,5 @@ jobs:
           msgramServiceToken: "Token 260780eadb7126db154e2669ad59117237293d05" # Token para acessar o serviço MeasureSoftGram
           productName: "GolangApp" # Nome do produto
           workflowName: 'build'
+          collectSonarqubeMetrics: false
+          collectGithubMetrics: true
