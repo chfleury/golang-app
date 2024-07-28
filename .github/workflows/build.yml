@@ -1,4 +1,5 @@
-name: status-check-golang-workflow
+name: build
+
 on: 
   pull_request:
     branches:
