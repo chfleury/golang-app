@@ -1,6 +1,8 @@
 on:
-  push:
-    branches: [ develop ]
+  workflow_run:
+    workflows: ["build"]
+    types:
+      - completed
 jobs:
   msgram_job:
     runs-on: ubuntu-latest
@@ -15,3 +17,4 @@ jobs:
           sonarProjectKey: "" # (opcional) Chave do projeto no SonarQube
           msgramServiceToken: "Token 260780eadb7126db154e2669ad59117237293d05" # Token para acessar o serviço MeasureSoftGram
           productName: "GolangApp" # Nome do produto
+          workflowName: 'build'
