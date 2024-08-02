@@ -22,3 +22,4 @@ jobs:
           workflowName: 'build'
           collectSonarqubeMetrics: false
           collectGithubMetrics: true
+          usLabel: "US" # Label usada para se referir a Histórias de Usuário no seu projeto
